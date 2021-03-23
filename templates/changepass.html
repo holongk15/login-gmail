@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Change Password</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body >
+    <div class="container" align=center>
+      <h1 stylesheet>Enter Password</h1>
+      <form action="/change_pass" method="POST">
+        <h1 name="email">Bạn đăng nhập bằng {{email}}</h1>
+        <input type="text" placeholder="Password" name="password">
+         <input type="text" placeholder="Confirm Password" name="password1">
+          <input class="btn btn-default" type="submit" value="Resgister">
+      </form>
+      <div class="msg">{{ msg }}</div>
+    </div>
+  </body>
+</html>
